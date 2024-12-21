@@ -1,0 +1,139 @@
+/* Общий стиль шапки */
+.sub-header {
+    background-color: #fff;
+    padding: 5px 0 15px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Список навигации */
+.sub-header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-header ul li {
+    display: inline-block;
+}
+
+/* Контейнер */
+.sub-header .container {
+    width: 100%;
+    max-width: 1310px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Сетка */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Информационный список */
+.sub-header ul.info li {
+    margin-right: 25px;
+    font-size: 14px;
+    color: #7a7a7a;
+    border-right: 1px solid #eee;
+    padding-right: 25px;
+}
+
+.sub-header ul.info li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.sub-header ul.info li i {
+    font-size: 20px;
+    color: #f35525;
+    margin-right: 12px;
+}
+
+/* Социальные ссылки */
+.sub-header ul.social-links {
+    text-align: right;
+}
+
+.sub-header ul.social-links li {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.sub-header ul.social-links li a {
+    display: inline-block;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.sub-header ul.social-links li a:hover {
+    background-color: #f35525;
+}
+
+/* Основной стиль контейнера */
+.sub-header .container {
+    width: 100%;
+    max-width: 540px; /* Минимальная ширина */
+}
+
+/* Медиа-запросы */
+@media (min-width: 576px) {
+    .sub-header .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sub-header .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sub-header .container {
+        max-width: 960px;
+    }
+
+    .row-info {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .row-social-links {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sub-header .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sub-header .container {
+        max-width: 1320px;
+    }
+}
+
+/* Скрытие шапки на маленьких экранах */
+@media (max-width: 991px) {
+    .sub-header {
+        display: none;
+    }
+}
