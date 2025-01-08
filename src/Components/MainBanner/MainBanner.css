@@ -1,0 +1,6 @@
+.slide-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}

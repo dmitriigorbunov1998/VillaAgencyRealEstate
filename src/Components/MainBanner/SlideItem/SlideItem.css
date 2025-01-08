@@ -1,0 +1,60 @@
+.item-container {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 20% 320px 20%;
+    margin-top: 0;
+}
+
+.item-background {
+    /*background-image: url('../../../assets/images/banner-01.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Перемещаем фоновый слой назад */
+}
+
+.item-info {
+    position: relative;
+    z-index: 1; /* Переносим инфоблок вперед */
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.item-info span {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.item-location {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.item-location em {
+    font-style: normal;
+    color: #f35525;
+}
+
+.item-title {
+    font-size: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 72px;
+    width: 50%;
+    margin-bottom: 0;
+}

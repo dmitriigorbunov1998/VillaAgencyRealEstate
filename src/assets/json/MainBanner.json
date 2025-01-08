@@ -1,0 +1,20 @@
+[
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "title": "Hurry! Get the best villa for you",
+    "backgroundImage": "../images/banner-01.jpg"
+  },
+  {
+    "city": "Melbourne",
+    "country": "Australia",
+    "title": "Be quick! Get the best villa in town",
+    "backgroundImage": "../images/banner-02.jpg"
+  },
+  {
+    "city": "Miami",
+    "country": "United States",
+    "title": "Act now! Get the highest level penthouse",
+    "backgroundImage": "../images/banner-03.jpg"
+  }
+]

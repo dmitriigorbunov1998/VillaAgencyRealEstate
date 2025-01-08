@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
 
-interface Props {
+interface SubHeaderProps {
     email: string;
     address: string;
     socialLinks: {
@@ -16,7 +16,7 @@ interface Props {
     };
 }
 
-const SubHeader: React.FC<Props> = ({ email, address, socialLinks }) => {
+const SubHeader: React.FC<SubHeaderProps> = ({ email, address, socialLinks }) => {
     const { facebook, twitter, linkedIn, instagram } = socialLinks;
 
     return (
